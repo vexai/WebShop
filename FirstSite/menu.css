@@ -25,9 +25,9 @@ h5 {
 
 .container {
     display: block;
-    width: 1920px;
+    width: 1420px;
     height: 600px;
-    margin-left: 540px;
+    margin-left: 785px;
 }
 
 .menu-container {
@@ -46,7 +46,7 @@ h5 {
     width: 350px;
     height: 500px;
     background-color: #e6572c;
-    border-radius: 10px;
+    border-radius: 25px;
     
 
 }
@@ -55,15 +55,15 @@ h5 {
     width: 300px;
     height: 300px;
     margin: 25px;
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow: rgba(45, 17, 43, 0.781) 5px 5px;
     
 }
 
-#button-goto {
+.button-goto {
     border:none;
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 60px;
     background-color: wheat;
     margin-top: -40px;
     margin-bottom: 10px;
@@ -72,12 +72,14 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    cursor: pointer;
     font-family: 'Bebas Neue', cursive;
     color: #2D112B;
     font-size: 20px;
 }
 
-#button-goto:hover {
+.button-goto:hover {
     background-color: #ffffff;
+    color: #e6572c;
 }
+
