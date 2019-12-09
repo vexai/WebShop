@@ -1,0 +1,79 @@
+
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    color: #e6572c;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+h4 {
+    font-family: 'Bebas Neue', cursive;
+    color: wheat;
+    font-size: 40px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+h5 {
+    font-family: 'Bebas Neue', cursive;
+    color: #2D112B;
+    font-size: 20px;
+    margin-top: 8px;
+
+}
+
+.container {
+    display: block;
+    width: 1920px;
+    height: 600px;
+    margin-left: 540px;
+}
+
+.menu-container {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 3;
+
+}
+
+
+.menu-card {
+    width: 350px;
+    height: 500px;
+    background-color: #e6572c;
+    border-radius: 10px;
+    
+
+}
+
+.menu-card img {
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(45, 17, 43, 0.781) 5px 5px;
+    
+}
+
+#button-goto {
+    border:none;
+    width: 100px;
+    height: 50px;
+    background-color: wheat;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Bebas Neue', cursive;
+    color: #2D112B;
+    font-size: 20px;
+}
