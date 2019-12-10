@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+}
+
+
+.logo-icon  {
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: enter;
+      animation-delay: 1s;
+      animation-duration: 4s;
+      animation-fill-mode: both;
+    width: 100px;
+    height: 50px;
+  }
+
+.video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    filter: brightness(50%);
+    animation-name: enter;
+      animation-delay: 2s;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+    
+}
