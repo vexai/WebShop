@@ -76,6 +76,7 @@ h5 {
     font-family: 'Bebas Neue', cursive;
     color: #2D112B;
     font-size: 20px;
+    border-radius: 15px;
 }
 
 #button-goto1:hover, #button-goto2:hover, #button-goto3:hover {

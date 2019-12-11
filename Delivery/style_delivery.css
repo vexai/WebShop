@@ -1,17 +1,19 @@
 body {
-    background-color: black;
+    background-color:black ;
+    margin:0;
+    padding: 0;
 }
 
 
 .logo-icon  {
     margin-left: auto;
     margin-right: auto;
-    animation-name: enter;
-      animation-delay: 1s;
-      animation-duration: 4s;
-      animation-fill-mode: both;
     width: 100px;
     height: 50px;
+    animation-name: enter;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
   }
 
 .video {
@@ -24,8 +26,76 @@ body {
     z-index: -1;
     filter: brightness(60%);
     animation-name: enter;
-      animation-delay: 2s;
       animation-duration: 2s;
       animation-fill-mode: both;
-    
 }
+
+@keyframes enter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.delivery-card {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: enter;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    box-shadow: gray(0.5) 10px 10px;
+}
+#button-goto2 {
+    position: absolute;
+    border:none;
+    width: 120px;
+    height: 60px;
+    background-color: #2D112B;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#button-goto2:hover {
+    background-color: white;
+    color: #2D112B;
+}
+
+h5{
+    padding-top: 150px;
+    font-family: 'Bebas Neue', cursive;
+    color: #2D112B;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+.container
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+    background-attachment: fixed;
+}
+
+
+

@@ -50,7 +50,7 @@
       
   }
   
-  .parallax {
+  .fakeparallax {
     -webkit-perspective: 100px;
             perspective: 100px;
     height: 100vh;

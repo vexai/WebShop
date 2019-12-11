@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="../jquery.js"></script>
+    <script src="jquery.js"></script>
     <script src="script_delivery.js"></script>
     <link rel="stylesheet" href="style_delivery.css">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/vexai/WebShop/master/IMG/favicon.png"
           type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <script src="parallax.js"></script>
+    <title>Delivery</title>
 </head>
 <body>
 <div class="logo-icon" style="cursor: pointer;">
@@ -20,13 +21,17 @@
     <video src="../IMG/video.mp4" autoplay loop muted></video>
 </div>
 
-<h2>sdaasdsadasdasdasdasdasd</h2>
-<h2>sdaasdsadasdasdasdasdasd</h2>
-<h2>sdaasdsadasdasdasdasdasd</h2>
-<h2>sdaasdsadasdasdasdasdasd</h2>
-<h2>sdaasdsadasdasdasdasdasd</h2>
-<h2>sdaasdsadasdasdasdasdasd</h2>
 
+<div class="delivery-card">
+    <div id="scene">
+        <div class="layer" data-depth="4"><h5 class="h5">Our products <br><span style="color: darkred; font-size: 50px" class="h5big" >fly</span> to you <br>straight from <br>the highest peaks</h5></div>
+    </div>
+    <button type="button" id="button-goto2">Equip yourself</button>
+</div>
 
+<script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+</script>
 </body>
 </html>
