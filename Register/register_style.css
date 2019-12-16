@@ -1,12 +1,59 @@
-.container {
-    background-color: white;
-    height: 600px;
-    width: 450px;
-    padding-top: 50px;
-    margin-top: 50px;
-    border-radius: 25px;
-}
+
 
 body {
     background-color: wheat;
+}
+
+#btnSubmit {
+    width: 120px;
+    height: 60px;
+    background-color: #2D112B;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px
+}
+
+.container {
+    margin-top: 150px;
+    padding-top: 10px;
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.card-panel {
+    width: 50%;
+    margin: auto;
+
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    padding-top: 5%;
+    text-align: center;
+    justify-content: center;
+    color:#2D112B;
+    animation-name: enter;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+
+}
+
+.videoRegister {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    filter: brightness(60%);
+    animation-name: enter;
+    animation-duration: 2s;
+    animation-fill-mode: both;
 }
