@@ -6,13 +6,14 @@ body {
 
 
 .logo-icon  {
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     width: 100px;
     height: 50px;
     animation-name: enter;
-    animation-delay: 2s;
-    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-duration: 1s;
     animation-fill-mode: both;
   }
 
@@ -26,7 +27,7 @@ body {
     z-index: -1;
     filter: brightness(60%);
     animation-name: enter;
-      animation-duration: 2s;
+      animation-duration: 1s;
       animation-fill-mode: both;
 }
 
@@ -49,8 +50,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     animation-name: enter;
-    animation-delay: 2s;
-    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-duration: 2s;
     animation-fill-mode: both;
     box-shadow: gray(0.5) 10px 10px;
 }
@@ -60,7 +61,7 @@ body {
     width: 120px;
     height: 60px;
     background-color: #2D112B;
-    margin-top: -20px;
+    margin-top: -60px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;

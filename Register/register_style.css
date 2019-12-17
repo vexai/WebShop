@@ -4,6 +4,41 @@ body {
     background-color: wheat;
 }
 
+@keyframes enter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.logo-icon  {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 50px;
+    animation-name: enter;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.videoRegister {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    filter: brightness(60%);
+    animation-name: enter;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
 #btnSubmit {
     width: 120px;
     height: 60px;
@@ -15,18 +50,48 @@ body {
     border-radius: 15px
 }
 
+#btnShopStyle {
+    width: 120px;
+    height: 60px;
+    background-color: #2D112B;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+}
+
+input[type='button']#btnShopStyle:hover {
+    background-color: white;
+    color: #2D112B;
+}
+
+input[type='submit']#btnSubmit:hover {
+    background-color: white;
+    color: #2D112B;
+}
+
 .container {
     margin-top: 150px;
     padding-top: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
     width: 500px;
-    height: 700px;
+    height:690px;
     background-color: white;
     border-radius: 20px;
+    animation-name: enter;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
 }
 
 .card-panel {
-    width: 50%;
-    margin: auto;
+    width: 95%;
+    margin: -30px auto 25px;
+    text-align: center;
 
 }
 
@@ -42,18 +107,4 @@ h2 {
     animation-duration: 4s;
     animation-fill-mode: both;
 
-}
-
-.videoRegister {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -1;
-    filter: brightness(60%);
-    animation-name: enter;
-    animation-duration: 2s;
-    animation-fill-mode: both;
 }

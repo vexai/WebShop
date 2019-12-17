@@ -28,6 +28,13 @@ form.addEventListener('submit', function (event) {
         loadingBar.className = 'indeterminate';
         loader.appendChild(loadingBar);
         container.appendChild(loader);
+
+        const btnShop = document.createElement('input');
+        btnShop.setAttribute('type', 'button');
+        btnShop.setAttribute('value', 'Equip Yourself');
+        btnShop.id = 'btnShopStyle';
+        btnShop.className = 'center-align';
+
         setTimeout(function () {
             const loaderDiv = document.querySelector('div.progress');
             const panel = document.createElement('div');
@@ -35,11 +42,11 @@ form.addEventListener('submit', function (event) {
             const text = document.createElement('span');
             text.className = 'white-text';
             text.appendChild(
-                document.createTextNode(
-                    `Sign up successful, welcome to SocialApe ${name}`
-                )
+                document.createTextNode(`Sign up successful ${name}!`)
+
             );
             panel.appendChild(text);
+            panel.appendChild(btnShop);
             container.replaceChild(panel, loaderDiv);
         }, 1000);
         setTimeout(function () {
@@ -47,6 +54,11 @@ form.addEventListener('submit', function (event) {
             let deletingParent = document.getElementById('btnSubmitDelete');
             deletingParent.removeChild(deletedBtn);
         }, 1000)
+        setTimeout(function () {
+            container.appendChild(btnShop);
+
+
+        },1000)
     }
 
 });
