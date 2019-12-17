@@ -33,7 +33,6 @@ form.addEventListener('submit', function (event) {
         btnShop.setAttribute('type', 'button');
         btnShop.setAttribute('value', 'Equip Yourself');
         btnShop.id = 'btnShopStyle';
-        btnShop.className = 'center-align';
 
         setTimeout(function () {
             const loaderDiv = document.querySelector('div.progress');
@@ -43,7 +42,6 @@ form.addEventListener('submit', function (event) {
             text.className = 'white-text';
             text.appendChild(
                 document.createTextNode(`Sign up successful ${name}!`)
-
             );
             panel.appendChild(text);
             panel.appendChild(btnShop);
@@ -53,11 +51,9 @@ form.addEventListener('submit', function (event) {
             let deletedBtn = document.getElementById('btnSubmit');
             let deletingParent = document.getElementById('btnSubmitDelete');
             deletingParent.removeChild(deletedBtn);
-        }, 1000)
+        }, 1000);
         setTimeout(function () {
             container.appendChild(btnShop);
-
-
         },1000)
     }
 
@@ -67,12 +63,14 @@ form.addEventListener('submit', function (event) {
 function validateFirstName() {
     if (checkIfEmpty(firstName)) return;
     if (!checkIfOnlyLetters(firstName)) return;
+    if (!meetLength(firstName, 2, 20)) return;
     return true;
 }
 
 function validateLastName() {
     if (checkIfEmpty(lastName)) return;
     if (!checkIfOnlyLetters(lastName)) return;
+    if (!meetLength(lastName, 2, 20)) return;
     return true;
 }
 
