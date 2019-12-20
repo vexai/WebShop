@@ -3,7 +3,6 @@ const lastName = document.getElementById('lastName');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirmPassword');
 const email = document.getElementById('email');
-const btnSubmit = document.getElementById('btnSubmit')
 
 const form = document.getElementById('myForm');
 
