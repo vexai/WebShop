@@ -1,6 +1,6 @@
 
 body {
-    background: linear-gradient(to top, rgb(255, 28, 84), rgb(39, 151, 255));
+    background-image: linear-gradient(to top, rgb(147, 24, 52), rgb(191, 27, 71), rgb(255, 28, 84), rgb(39, 151, 255));
     padding: 0;
     margin: 0;
     font-family: 'Varela Round', sans-serif;
