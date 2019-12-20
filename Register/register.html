@@ -8,9 +8,34 @@
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="register_style.css">
 
-    <title>Register</title>
+    <title>MouSho | Register</title>
 </head>
 <body>
+
+
+<div class="header headerColor" onscroll="isScrolling()">
+
+    <div class="space-margin-top" style=" width: 100px; height: 50px; background-color: transparent"></div>
+
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li><a href="../index.html">Main Site</a></li>
+            <li><a href="https://vanila.io" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/dominik-przysta%C5%82-29a089182/" target="_blank">Linkedin</a></li>
+            <li>Mou Sho <span>Shopping Cart</span></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
 <div class="logo-icon" style="cursor: pointer;">
     <img class="logo-icon"src="https://raw.githubusercontent.com/vexai/WebShop/master/IMG/image.png" onclick="location.href='../index.html'">
 </div>
