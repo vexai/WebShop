@@ -1,8 +1,8 @@
 //declare an array
-var my_array = new Array();
+var my_array = [];
 
 //get all instances of the SPAN tag and iterate through each one
-$('div.Parent div.childOne span').each(function(){
+$('div#Parent div.childOne span').each(function(){
 
     //build an associative array that assigns the span's id as the array id
     //assign the inner value of the span to the array piece
@@ -15,4 +15,4 @@ $('div.Parent div.childOne span').each(function(){
 });
 
 
-console.log(my_array)
+console.log(my_array);
