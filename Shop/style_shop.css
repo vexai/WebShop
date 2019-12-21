@@ -16,7 +16,7 @@ p {
     width: 100%;
     max-width: 100%;
     box-shadow: none;
-    background-color: transparent;
+    background-color: rgb(255, 28, 84);
     position: fixed;
     height: 60px !important;
     overflow: hidden;
@@ -55,18 +55,14 @@ p {
     height: 100%;
     position: fixed;
     left: 0;
-    width: 250px;
+    width: 300px;
     margin-top: 0px;
     transform: translateX(0px);
     transition: transform 250ms ease-in-out;
-    background-color: transparent;
+    background: linear-gradient(to bottom, rgb(255, 28, 84), rgb(39, 151, 255))
 }
 
-#sidebarMenu.scrolled {
-    background: linear-gradient(to bottom, rgb(255, 28, 84), rgb(39, 151, 255));
-    transform: translateX(0px);
-    transition: transform 250ms ease-in-out;
-}
+
 
 .sidebarMenuInner {
     margin: 0;
@@ -99,7 +95,7 @@ p {
 }
 
 input[type="checkbox"]:checked ~ #sidebarMenu {
-    transform: translateX(-250px);
+    transform: translateX(-300px);
 }
 
 input[type=checkbox] {
@@ -343,7 +339,79 @@ h3 {
     cursor: pointer;
 }
 
-  
+
+
+
+/*SHOPPING CART*/
+
+
+.container {
+    color: white;
+}
+
+.cart-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.cart-price-span {
+ margin-top: 15px;
+}
+.cart-item-title {
+    display: block;
+}
+
+
+
+.cart-quantity-input {
+    width: 30px;
+    height: 20px;
+}
+
+.btn-danger {
+    width: 65px;
+    height: 30px;
+    background-color: red;
+    border: white solid 1px;
+    color: white;
+    padding: 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: white;
+    color: red;
+}
+.cart-total {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-purchase {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: white solid 2px;
+    background-color: #1e83ff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-purchase:hover {
+    background-color: white;
+    color: #1e83ff;
+}
+
+
 
 
 
