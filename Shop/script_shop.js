@@ -218,6 +218,8 @@ $(function () {
                 removeCartItem)
             cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener
             ('change', quantityChanged);
+
+            console.log(cartItems.lastElementChild)
     }
 
 
@@ -229,17 +231,28 @@ $(function () {
     function purchaseClicked() {
         let zeroPrice = document.getElementsByClassName('cart-total-price')[0];
         if (zeroPrice.innerText != '$0') {
-            alert('Thank you for your purchase!')
+            window.alert('Thank you for your purchase!')
             let cartItems = document.getElementsByClassName('cart-items')[0]
             while (cartItems.hasChildNodes()) {
                 cartItems.removeChild(cartItems.firstChild)
             }
             updateCartTotal()
         } else {
-            alert('It has to be at least one product in the cart to purchase!')
-            let button = document.getElementsByClassName('btn-purchase')[0]
+            window.alert('It has to be at least one product in the cart to purchase!')
         }
     }
+
+    document.getElementsByClassName('btn-clear')[0].addEventListener('click', clearCart)
+    function clearCart() {
+        let cartItems = document.getElementsByClassName('cart-items')[0]
+        while (cartItems.hasChildNodes()) {
+            cartItems.removeChild(cartItems.firstChild)
+        }
+        updateCartTotal()
+
+    }
+
+
 
 
 });

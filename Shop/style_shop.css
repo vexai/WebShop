@@ -411,6 +411,24 @@ h3 {
     color: #1e83ff;
 }
 
+.btn-clear {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: white solid 2px;
+    background-color: #bf1b47;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-clear:hover {
+    background-color: white;
+    color: #931834;
+}
+
 
 
 
