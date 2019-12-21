@@ -11,6 +11,14 @@ $(function() {
 
 
 
+  $('.shopping-card').hover(function () {
+    $('.shopping-card::after').css('border','solid black 5px');
+  }, function () {
+    $('.shopping-card::after').css('');
+  });
+
+
+
 const modal = document.getElementsByClassName("modal");
 const imgModal = document.getElementsByClassName("imgModal");
 const span = document.getElementsByClassName("close");
