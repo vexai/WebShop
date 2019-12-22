@@ -28,11 +28,6 @@ form.addEventListener('submit', function (event) {
         loader.appendChild(loadingBar);
         container.appendChild(loader);
 
-        const btnShop = document.createElement('input');
-        btnShop.setAttribute('type', 'button');
-        btnShop.setAttribute('value', 'Equip Yourself');
-        btnShop.id = 'btnShopStyle';
-
         setTimeout(function () {
             const loaderDiv = document.querySelector('div.progress');
             const panel = document.createElement('div');
@@ -43,17 +38,14 @@ form.addEventListener('submit', function (event) {
                 document.createTextNode(`Sign up successful ${name}!`)
             );
             panel.appendChild(text);
-            panel.appendChild(btnShop);
             container.replaceChild(panel, loaderDiv);
         }, 1000);
         setTimeout(function () {
             let deletedBtn = document.getElementById('btnSubmit');
             let deletingParent = document.getElementById('btnSubmitDelete');
             deletingParent.removeChild(deletedBtn);
-        }, 1000);
-        setTimeout(function () {
-            container.appendChild(btnShop);
-        },1000)
+        }, 0);
+
     }
 
 });

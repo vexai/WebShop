@@ -2,14 +2,6 @@
 $(function () {
 
 
-    $(document).scroll(function () {
-        let $nav = $(".header");
-        let $sideNav = $("#sidebarMenu");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        $sideNav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-
-
     const modal = document.getElementsByClassName("modal");
     const imgModal = document.getElementsByClassName("imgModal");
     const span = document.getElementsByClassName("close");
@@ -248,6 +240,8 @@ $(function () {
             let cartItems = document.getElementsByClassName('cart-items')[0]
             while (cartItems.hasChildNodes()) {
                 cartItems.removeChild(cartItems.firstChild)
+                items =[];
+                console.log(items.length)
             }
             updateCartTotal()
         } else {

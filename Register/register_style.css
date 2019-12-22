@@ -252,7 +252,7 @@ input[type='submit']#btnSubmit:hover {
     padding-left: 1%;
     padding-right: 1%;
     width: 500px;
-    height:690px;
+    height:650px;
     background-color: white;
     border-radius: 20px;
     animation-name: enter;
@@ -263,7 +263,7 @@ input[type='submit']#btnSubmit:hover {
 
 .card-panel {
     width: 95%;
-    margin: -30px auto 25px;
+    margin: -40px auto 25px;
     text-align: center;
 
 }
